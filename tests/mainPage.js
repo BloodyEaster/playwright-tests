@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test('Проверка отображения элементов навигации хедера', async ({ page }) => {
   await page.goto('https://playwright.dev/');
   await expect.soft(page.getByRole('link', { name: 'Playwright logo Playwright' })).toBeVisible();
-  await expect.soft(page.getByRole('link', { name: 'Docs' })).toBeVisible();
+  await expect.soft(page.getByRole('link', { name: 'Docs1' })).toBeVisible();
   await expect.soft(page.getByRole('link', { name: 'API' })).toBeVisible();
   await expect.soft(page.getByRole('button', { name: 'Node.js' })).toBeVisible();
   await expect.soft(page.getByRole('link', { name: 'Community' })).toBeVisible();
